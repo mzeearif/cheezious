@@ -1,0 +1,54 @@
+/* Navbar.module.css */
+.navbar {
+    background-color: rgb(255, 203, 4);
+    box-shadow: rgba(0, 0, 0, 0.133) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 108px 0px 74px;
+    position: fixed;
+    width: 100%;
+    max-width: 89%;
+    z-index: 1;
+}
+
+.navbar .leftnav .location svg {
+    width: 30px;
+    height: 30px;
+    color: rgb(212, 0, 0);
+    font-size: 34px;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+
+.location {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+
+}
+
+.navbar ul li a {
+    list-style: none;
+    text-decoration: none !important;
+}
+
+.navright {
+    display: flex;
+}
+
+.navright svg {
+    width: 20px;
+    height: 20px;
+    color: rgb(212, 0, 0);
+    font-size: 34px;
+    margin: 7px 15px;
+    cursor: pointer;
+}
+
+.logo ul {
+    margin: 0px;
+}
+
+/* Additional styling can be added here */

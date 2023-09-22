@@ -1,0 +1,55 @@
+/* Navbar.module.css */
+.navbar {
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .leftnav .location svg {
+    width: 30px;
+    height: 30px;
+    color: rgb(212, 0, 0);
+    font-size: 34px;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+
+.location {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+
+}
+
+.navbar ul li a {
+    list-style: none;
+    text-decoration: none !important;
+}
+
+.navright {
+    display: flex;
+}
+
+.navright svg {
+    width: 20px;
+    height: 20px;
+    color: rgb(212, 0, 0);
+    font-size: 34px;
+    margin: 7px 15px;
+    cursor: pointer;
+}
+
+.logo ul {
+    margin: 0px;
+}
+.cartButton{
+    border: none;
+    background: none;
+}
+
+/* Additional styling can be added here */

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3004/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><link rel="preload" as="font" href="http://localhost:3004/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2" crossorigin="" type="font/woff2"><link rel="preload" as="image" href="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg"><link rel="stylesheet" href="./Create Next App_files/layout.css" data-precedence="next_static/css/app/layout.css"><link rel="stylesheet" href="./Create Next App_files/page.css" data-precedence="next_static/css/app/page.css"><link rel="preload" href="./Create Next App_files/webpack.js" as="script" fetchpriority="low"><script src="./Create Next App_files/main-app.js" async=""></script><title>Create Next App</title><meta name="description" content="Generated by create next app"><link rel="icon" href="http://localhost:3004/favicon.ico" type="image/x-icon" sizes="16x16"><meta name="next-size-adjust"><script src="./Create Next App_files/polyfills.js" nomodule=""></script></head><body><header><div><nav class="Navbar_navbar__X_TPc"><div class=""><ul class="Navbar_leftnav__FKzHX"><li class="Navbar_location__uh4Th"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" class="svg-inline--fa fa-location-dot location-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path></svg><div style="display:flex;flex-direction:column;justify-content:center;overflow:hidden;width:100%;cursor:pointer;max-width:140px"><span style="color:rgb(0, 0, 0);font-size:14px;font-weight:normal">Deliver to</span><span style="color:rgb(0, 0, 0);font-size:12px;font-weight:normal;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">Akhri Mint , Lahore</span></div></li></ul></div><div class="Navbar_logo__eWcuJ"><ul class=""><li class="nav-item"><a href="http://localhost:3004/"><img alt="Logo" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" style="color:transparent" srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimages.f37e5d3f.png&amp;w=96&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimages.f37e5d3f.png&amp;w=256&amp;q=75 2x" src="./Create Next App_files/images.png"></a></li></ul></div><div class=""><ul class="Navbar_navright__6IPrK"><li class="nav-item"><a class="nav-link" href="http://localhost:3004/"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" class="svg-inline--fa fa-magnifying-glass " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg></a></li><hr class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical blink-style-w6wt69" color="#d40000" style="margin:0px 4px;opacity:0.4;height:40px"><li class="nav-item"><a class="nav-link" href="http://localhost:3004/#"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"></path></svg></a></li><hr class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical blink-style-w6wt69" color="#d40000" style="margin:0px 4px;opacity:0.4;height:40px"><li class="nav-item"><button class="Navbar_cartButton__Jzhkj"><div style="position:absolute;top:10px;right:108px;font-size:12px;font-weight:bold;background-color:rgb(252, 252, 252);color:rgb(0, 0, 0);border:1px solid;border-radius:25px;height:20px;width:20px;display:flex;align-items:center;justify-content:center">0</div><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cart-shopping" class="svg-inline--fa fa-cart-shopping " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg></button></li></ul></div></nav></div></header><main><main><div class="sliderimage"><img alt="[object Object]" loading="lazy" width="960" height="393" decoding="async" data-nimg="1" style="color:transparent" srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fslide.863890d7.jpg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fslide.863890d7.jpg&amp;w=1920&amp;q=75 2x" src="./Create Next App_files/slide.jpeg"></div><div class="FoodItems_fooditem__W8Wc2"><nav aria-label="Page navigation" class="FoodItems_foodnav__K36UR"><ul class="pagination"><li class="page-item disabled"><button class="page-link" aria-label="Previous"><span aria-hidden="true">«</span></button></li><li>Category 1</li><li>Category 2</li><li>Category 3</li><li>Category 4</li><li>Category 5</li><li>Category 6</li><li>Category 7</li><li>Category 8</li><li>Category 9</li><li>Category 10</li><li class="page-item "><button class="page-link" aria-label="Next"><span aria-hidden="true">»</span></button></li></ul></nav></div><div class="FoodItem_category__5QYxm"><div><div class="FoodItem_muiBox__yNJz0"></div><h2>Category 1</h2><div class="FoodItem_categoryName__FgSJx"><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 1"><div class="FoodItem_itemContent__7Ob84"><h3>Item 1</h3><p>Description for Item 1</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$10.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 2"><div class="FoodItem_itemContent__7Ob84"><h3>Item 2</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 3"><div class="FoodItem_itemContent__7Ob84"><h3>Item 3</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 4"><div class="FoodItem_itemContent__7Ob84"><h3>Item 4</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 5"><div class="FoodItem_itemContent__7Ob84"><h3>Item 5</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 6"><div class="FoodItem_itemContent__7Ob84"><h3>Item 6</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div></div></div><div><div class="FoodItem_muiBox__yNJz0"></div><h2>Category 2</h2><div class="FoodItem_categoryName__FgSJx"><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 1"><div class="FoodItem_itemContent__7Ob84"><h3>Item 1</h3><p>Description for Item 1</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$10.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 2"><div class="FoodItem_itemContent__7Ob84"><h3>Item 2</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 3"><div class="FoodItem_itemContent__7Ob84"><h3>Item 3</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 4"><div class="FoodItem_itemContent__7Ob84"><h3>Item 4</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 5"><div class="FoodItem_itemContent__7Ob84"><h3>Item 5</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 6"><div class="FoodItem_itemContent__7Ob84"><h3>Item 6</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div></div></div><div><div class="FoodItem_muiBox__yNJz0"></div><h2>Category 3</h2><div class="FoodItem_categoryName__FgSJx"><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 1"><div class="FoodItem_itemContent__7Ob84"><h3>Item 1</h3><p>Description for Item 1</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$10.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 2"><div class="FoodItem_itemContent__7Ob84"><h3>Item 2</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 3"><div class="FoodItem_itemContent__7Ob84"><h3>Item 3</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 4"><div class="FoodItem_itemContent__7Ob84"><h3>Item 4</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 5"><div class="FoodItem_itemContent__7Ob84"><h3>Item 5</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 6"><div class="FoodItem_itemContent__7Ob84"><h3>Item 6</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div></div></div><div><div class="FoodItem_muiBox__yNJz0"></div><h2>Category 4</h2><div class="FoodItem_categoryName__FgSJx"><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 1"><div class="FoodItem_itemContent__7Ob84"><h3>Item 1</h3><p>Description for Item 1</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$10.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 2"><div class="FoodItem_itemContent__7Ob84"><h3>Item 2</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 3"><div class="FoodItem_itemContent__7Ob84"><h3>Item 3</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 4"><div class="FoodItem_itemContent__7Ob84"><h3>Item 4</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 5"><div class="FoodItem_itemContent__7Ob84"><h3>Item 5</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 6"><div class="FoodItem_itemContent__7Ob84"><h3>Item 6</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div></div></div><div><div class="FoodItem_muiBox__yNJz0"></div><h2>Category 5</h2><div class="FoodItem_categoryName__FgSJx"><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 1"><div class="FoodItem_itemContent__7Ob84"><h3>Item 1</h3><p>Description for Item 1</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$10.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 2"><div class="FoodItem_itemContent__7Ob84"><h3>Item 2</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 3"><div class="FoodItem_itemContent__7Ob84"><h3>Item 3</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 4"><div class="FoodItem_itemContent__7Ob84"><h3>Item 4</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 5"><div class="FoodItem_itemContent__7Ob84"><h3>Item 5</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 6"><div class="FoodItem_itemContent__7Ob84"><h3>Item 6</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div></div></div><div><div class="FoodItem_muiBox__yNJz0"></div><h2>Category 6</h2><div class="FoodItem_categoryName__FgSJx"><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 1"><div class="FoodItem_itemContent__7Ob84"><h3>Item 1</h3><p>Description for Item 1</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$10.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 2"><div class="FoodItem_itemContent__7Ob84"><h3>Item 2</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 3"><div class="FoodItem_itemContent__7Ob84"><h3>Item 3</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 4"><div class="FoodItem_itemContent__7Ob84"><h3>Item 4</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 5"><div class="FoodItem_itemContent__7Ob84"><h3>Item 5</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 6"><div class="FoodItem_itemContent__7Ob84"><h3>Item 6</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div></div></div><div><div class="FoodItem_muiBox__yNJz0"></div><h2>Category 7</h2><div class="FoodItem_categoryName__FgSJx"><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 1"><div class="FoodItem_itemContent__7Ob84"><h3>Item 1</h3><p>Description for Item 1</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$10.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 2"><div class="FoodItem_itemContent__7Ob84"><h3>Item 2</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 3"><div class="FoodItem_itemContent__7Ob84"><h3>Item 3</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 4"><div class="FoodItem_itemContent__7Ob84"><h3>Item 4</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 5"><div class="FoodItem_itemContent__7Ob84"><h3>Item 5</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div><div class="FoodItem_foodName__5qVBV"><img src="./Create Next App_files/stock-photo-classic-hamburger-stock-photo-isolated-in-white-2282033179.jpg" width="200" height="150" alt="Item 6"><div class="FoodItem_itemContent__7Ob84"><h3>Item 6</h3><p>Description for Item 2</p><div style="display:block;width:100%;margin-top:-10px;height:1px;background-color:rgb(238, 240, 242)"></div><div class="FoodItem_price__bbCl1" style="color:rgb(228, 32, 38);font-size:14px"><span>Rs. <!-- -->$9.99</span></div><button class="Button_button__1u8vz" tabindex="0" type="button" aria-label="Add To Cart">Add to cart<span class="MuiTouchRipple-root blink-style-w0pj6f"></span></button></div></div></div></div></div></main></main><script src="./Create Next App_files/webpack.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:HL[\"/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2\",{\"as\":\"font\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/css/app/layout.css?v=1695216085087\",{\"as\":\"style\"}]\n0:\"$L3\"\n"])</script><script>self.__next_f.push([1,"4:HL[\"/_next/static/css/app/page.css?v=1695216085087\",{\"as\":\"style\"}]\n"])</script><script>self.__next_f.push([1,"5:I{\"id\":\"(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js\",\"chunks\":[\"app-pages-internals:static/chunks/app-pages-internals.js\"],\"name\":\"default\",\"async\":false}\n7:I{\"id\":\"(app-pages-browser)/./node_modules/next/dist/client/components/error-boundary.js\",\"chunks\":[\"app-pages-internals:static/chunks/app-pages-internals.js\"],\"name\":\"\",\"async\":false}\n8:I{\"id\":\"(app-pages-browser)/./src/app/store/CartContext.js\",\"chunks\":[\"app/layout:static/chunks/app/layout.js\"],\"name\":\"CartProvider\""])</script><script>self.__next_f.push([1,",\"async\":false}\n9:I{\"id\":\"(app-pages-browser)/./src/app/components/Navbar.js\",\"chunks\":[\"app/layout:static/chunks/app/layout.js\"],\"name\":\"\",\"async\":false}\na:I{\"id\":\"(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js\",\"chunks\":[\"app-pages-internals:static/chunks/app-pages-internals.js\"],\"name\":\"default\",\"async\":false}\nb:I{\"id\":\"(app-pages-browser)/./node_modules/next/dist/client/components/render-from-template-context.js\",\"chunks\":[\"app-pages-internals:static/chunks/app-pages-int"])</script><script>self.__next_f.push([1,"ernals.js\"],\"name\":\"default\",\"async\":false}\nd:I{\"id\":\"(app-pages-browser)/./node_modules/next/dist/client/image-component.js\",\"chunks\":[\"app/page:static/chunks/app/page.js\"],\"name\":\"Image\",\"async\":false}\ne:I{\"id\":\"(app-pages-browser)/./src/app/pages/FoodNav.js\",\"chunks\":[\"app/page:static/chunks/app/page.js\"],\"name\":\"\",\"async\":false}\n"])</script><script>self.__next_f.push([1,"3:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/app/layout.css?v=1695216085087\",\"precedence\":\"next_static/css/app/layout.css\"}]],[\"$\",\"$L5\",null,{\"buildId\":\"development\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/\",\"initialTree\":[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],\"initialHead\":[false,\"$L6\"],\"globalErrorComponent\":\"$7\",\"children\":[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L8\",null,{\"children\":[[\"$\",\"header\",null,{\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"$L9\",null,{}],\"$undefined\"]}]}],[\"$\",\"main\",null,{\"children\":[\"$\",\"$La\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$Lb\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[],\"childProp\":{\"current\":[\"$Lc\",[\"$\",\"main\",null,{\"className\":\"$undefined\",\"children\":[[\"$\",\"div\",null,{\"className\":\"sliderimage\",\"children\":[\"$\",\"$Ld\",null,{\"src\":{\"src\":\"/_next/static/media/slide.863890d7.jpg\",\"height\":393,\"width\":960,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fslide.863890d7.jpg\u0026w=8\u0026q=70\",\"blurWidth\":8,\"blurHeight\":3},\"alt\":{\"src\":\"/_next/static/media/slide.863890d7.jpg\",\"height\":393,\"width\":960,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fslide.863890d7.jpg\u0026w=8\u0026q=70\",\"blurWidth\":8,\"blurHeight\":3}}]}],[\"$\",\"$Le\",null,{}]]}],null],\"segment\":\"__PAGE__\"},\"styles\":[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/app/page.css?v=1695216085087\",\"precedence\":\"next_static/css/app/page.css\"}]]}]}]]}]}]}],null]}]]\n"])</script><script>self.__next_f.push([1,"6:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"1\",{\"children\":\"Create Next App\"}],[\"$\",\"meta\",\"2\",{\"name\":\"description\",\"content\":\"Generated by create next app\"}],[\"$\",\"meta\",\"3\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"link\",\"4\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"}],[\"$\",\"meta\",\"5\",{\"name\":\"next-size-adjust\"}]]\nc:null\n"])</script><next-route-announcer style="position: absolute;"><template shadowrootmode="open"><div aria-live="assertive" id="__next-route-announcer__" role="alert" style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;"></div></template></next-route-announcer></body></html>

@@ -1,0 +1,38 @@
+.category {
+
+    padding: 30px 100px;
+}
+
+.muiBox {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(202, 208, 223), transparent);
+}
+
+.categoryName {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.foodName {
+    padding: 8px;
+    cursor: pointer;
+    border: 2px solid #f3f3f3;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+.itemContent{
+    text-align: center;
+    padding-bottom: 6px;
+}
+.price{
+    margin: 10px 0 10px 0;
+}

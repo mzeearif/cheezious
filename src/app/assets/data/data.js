@@ -1,6 +1,6 @@
 const data = [
     {
-        category: 'Category 1',
+        category: 'Burger',
         items: [
             {
                 id: 1,
@@ -48,7 +48,7 @@ const data = [
         ],
     },
     {
-        category: 'Category 2',
+        category: 'Pizza ',
         items: [
             {
                 id: 7,
@@ -97,7 +97,7 @@ const data = [
     },
     {
 
-        category: 'Category 3',
+        category: 'Shawarma',
         items: [
             {
                 id: 13,

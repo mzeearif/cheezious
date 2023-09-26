@@ -1,23 +1,33 @@
 // FoodItems.js
-import React from 'react';
-import data from '@/app/assets/data/data';
+'use client'
+import React, { useRef, useEffect } from 'react';
 import Styles from './FoodItem.module.css';
 import Button from '@/app/components/Button';
 import { useCart } from '@/app/store/CartContext';
 
-const FoodItems = () => {
+const FoodItems = ({ selectedCategory, data }) => {
   const { addToCart } = useCart();
+  const categoryRefs = {};
 
-  const handleAddToCart = (item) => {
-    addToCart(item);
-    console.log(item)
-  };
+  // Create refs for each category
+  data.forEach((category, index) => {
+    categoryRefs[category.category] = useRef(null);
+  });
+
+  // Scroll to the selected category when it changes
+  useEffect(() => {
+    if (categoryRefs[selectedCategory] && categoryRefs[selectedCategory].current) {
+      categoryRefs[selectedCategory].current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }, [selectedCategory]);
 
   return (
     <div className={Styles.category}>
-
       {data.map((category, index) => (
-        <div key={index}>
+        <div key={index} ref={categoryRefs[category.category]}>
           <div className={Styles.muiBox}></div>
           <h2>{category.category}</h2>
           <div className={Styles.categoryName}>
@@ -42,7 +52,7 @@ const FoodItems = () => {
                   >
                     <span>Rs. {item.price}</span>
                   </div>
-                  <Button label="Add to cart" onClick={() => handleAddToCart(item)} />
+                  <Button label="Add to cart" onClick={() => addToCart(item)} />
                 </div>
               </div>
             ))}

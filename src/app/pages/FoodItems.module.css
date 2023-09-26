@@ -1,10 +1,11 @@
-.fooditem .foodnav ul{
+.fooditem .foodnav ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
 }
-.fooditem{
-background-color: rgb(255, 255, 255);
+
+.fooditem {
+    background-color: rgb(255, 255, 255);
     color: rgb(36, 40, 43);
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     position: sticky;
@@ -15,9 +16,19 @@ background-color: rgb(255, 255, 255);
     margin-top: 0px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
 }
+
 .fooditem .foodnav ul li {
     border: 1px solid #ccc;
-    border-radius: 25px ;
+    border-radius: 25px;
     padding: 5px 20px 5px 20px;
     background-color: rgb(229, 229, 229);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.foodnav .activeCategory {
+    background-color: rgb(255, 203, 4) !important;
+
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }

@@ -5,10 +5,15 @@
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 12px;
+    min-height: calc(100vh - 14px);
+
+    width: 51%;
+
 }
 .modalContent{
      border: 1px solid #ccc;
     border-radius: 12px;
+
 }
 .cartbutton{
         display: flex;
@@ -48,10 +53,10 @@
     font-weight: 500;
 }
 .cartitems{
-        padding: 10px 15px 183px 15px;
+        padding: 10px 15px 0px 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
         overflow-y: scroll;
-    height: 375px;
+    height: 706px;
 
 }
 .add_remove{

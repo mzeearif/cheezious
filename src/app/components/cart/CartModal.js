@@ -46,7 +46,7 @@ useEffect(() => {
         </button>)}
         </div>
         {cart.length === 0 ? (
-          <p>Your cart is empty.</p>
+          <p style={{display: "flex",lineHeight: "50", justifyContent: "center"}}>Your cart is empty.</p>
         ) : (
           <div >
             <div className={Styles.cartitems}>

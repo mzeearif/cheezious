@@ -39,6 +39,8 @@ const calculateItemSubtotal = (item) => {
             ))}
           </ul>
           <p>Total Price: Rs. {totalPrice}</p>
+
+
         </div>
       )}
     </div>

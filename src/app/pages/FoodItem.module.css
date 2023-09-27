@@ -36,3 +36,7 @@
 .price{
     margin: 10px 0 10px 0;
 }
+.addtocartbtn{
+    margin: 0 auto;
+    width: 72%;
+}

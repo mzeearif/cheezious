@@ -52,7 +52,9 @@ const FoodItems = ({ selectedCategory, data }) => {
                   >
                     <span>Rs. {item.price}</span>
                   </div>
+                  <div className={Styles.addtocartbtn}>
                   <Button label="Add to cart" onClick={() => addToCart(item)} />
+                  </div>
                 </div>
               </div>
             ))}

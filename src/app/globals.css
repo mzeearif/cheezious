@@ -105,3 +105,14 @@ header{
     margin: 0px 2px;
     cursor: pointer;
 }
+.blink-style-1cw4hi4{
+    color: red!important;
+}
+blink-style-t4jjy9::before, .blink-style-t4jjy9::after {
+    position: relative;
+    width: 100%;
+    border-top: thin solid rgba(0, 0, 0, 0.12);
+    top: 50%;
+    content: "";
+    transform: translateY(50%);
+}

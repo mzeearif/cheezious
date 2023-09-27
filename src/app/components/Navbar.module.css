@@ -1,6 +1,6 @@
 /* Navbar.module.css */
 .navbar {
-    padding: 0px 100px;
+    padding: 8px 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

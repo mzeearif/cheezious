@@ -1,32 +1,43 @@
-'use client'
-import Styles from './auth.module.css';
-import "../../globals.css"
-import Button from "@/app/components/Button";
 import React, {useState} from "react";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faClosedCaptioning, faEyeDropperEmpty, faTimes, faTrashAlt} from '@fortawesome/free-solid-svg-icons';
+import '../../globals.css';
+import Styles from './AuthModal.module.css';
+
+import Button from "@/app/components/Button";
 import Link from "next/link";
 
-const Auth = ({onClose}) => {
-    const [isAuthOpen, setAuthOpen] = useState(true);
+const AuthModal = () => {
+     const [modalVisible, setModalVisible] = useState(true);
 
-    const closeAuth = () => {
-        setAuthOpen(false);
-        onClose();
-    };
-    return (
-        <div className={Styles.modalbg}>
-            <div className={Styles.auth}>
-                <div className={Styles.authmodal}>
-                    <div className={Styles.closebtn}>
-                    <div><span className={Styles.label}>
-                    Enter your mobile number
-                    </span></div>
-                    <div>
-                    <span onClick={closeAuth}><FontAwesomeIcon icon={faTimes}/></span>
+  const openModal = () => {
+    setModalVisible(true);
+  };
+
+  const closeModal = () => {
+    setModalVisible(false);
+  };
+  const checkoutHandler = () => {
+    setModalVisible(false);
+  }
+
+  // const handleOutsideClick = (event) => {
+  //   if (event.target === event.currentTarget) {
+  //     closeModal();
+  //   }
+  // };
+
+
+  return(
+      <div>
+      <span onClick={openModal}></span>
+
+      {modalVisible && (
+        <div className={Styles.modal} >
+          <div className={Styles.modalcontent}>
+              <div className={Styles.cartbutton}>
+                        <h2>Your Cart</h2>
+                   <span className={Styles.close} onClick={closeModal}>&times;</span>
                     </div>
-                    </div>
-                    <div
+             <div
                         className={Styles.alert}
                     >
                         <div className="MuiAlert-icon blink-style-1l54tgj">
@@ -109,16 +120,15 @@ const Auth = ({onClose}) => {
                         <span style={{fontSize: 12, color: "rgb(197, 197, 197)", lineHeight: "30px"}}>OR</span>
                         <span className={Styles.c1ovea}><hr/> </span>
                     </div>
-
-                    <button
-                        className={Styles.convertbtn}
-                    >
+                    <Link href='/checkout'>
+                    <button className={Styles.convertbtn} onClick={checkoutHandler}>
                         Order as Guest
-                    </button>
-                </div>
+                    </button></Link>
 
-            </div>
+          </div>
         </div>
-    )
+      )}
+    </div>
+  )
 }
-export default Auth;
+export default AuthModal;

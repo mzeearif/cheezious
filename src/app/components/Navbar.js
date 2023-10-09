@@ -1,5 +1,6 @@
 'use client'
 import React, {useState} from 'react';
+import '../globals.css'
 import Link from 'next/link';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
@@ -13,8 +14,24 @@ import Image from 'next/image';
 import logo from '../assets/images/images.png';
 import {useCart} from "@/app/store/CartContext";
 import CartModal from "@/app/components/cart/CartModal";
+import ModalCart from "@/app/components/modal/ModalCart";
 
 const Navbar = () => {
+     const [modalVisible, setModalVisible] = useState(false);
+
+  const openModal = () => {
+    setModalVisible(true);
+  };
+
+  const closeModal = () => {
+    setModalVisible(false);
+  };
+
+  const handleOutsideClick = (event) => {
+    if (event.target === event.currentTarget) {
+      closeModal();
+    }
+  };
     const {cart} = useCart();
     const [isCartOpen, setCartOpen] = useState(false);
 
@@ -98,7 +115,7 @@ const Navbar = () => {
                         style={{margin: "0px 4px", opacity: "0.4", height: 40}}
                     />
                     <li className="nav-item">
-                        <button onClick={openCart} className={styles.cartButton}>
+                        <span onClick={openCart} className={styles.cartButton}>
                             <div
                                 style={{
                                     position: "absolute",
@@ -118,17 +135,19 @@ const Navbar = () => {
 
                                 }}
                             >
-                                {cart.length}
+                                <ModalCart/>
                             </div>
 
                             <FontAwesomeIcon icon={faShoppingCart} className={styles.icon}/>
 
-                        </button>
+                        </span>
                     </li>
 
                 </ul>
             </div>
-            <CartModal isOpen={isCartOpen} onClose={closeCart} />
+
+
+            {/*<CartModal isOpen={isCartOpen} onClose={closeCart} />*/}
         </nav>
     );
 };

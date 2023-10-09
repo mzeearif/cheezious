@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 // import "../css/customcss.css";
 import Head from "next/head";
 import { CartProvider } from "@/app/store/CartContext";
+import Footer from "@/app/pages/Footer";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
                     </header>
                     <main>
                         {children}
+                        <Footer/>
                     </main>
                 </CartProvider>
             </body>

@@ -3,6 +3,7 @@
     border-radius: 20px;
     border: 2px solid rgb(243, 243, 243);
     padding: 30px 60px 0px;
+    margin: 0 115px 0 115px;
 }
 .logosection{
     display: flex;

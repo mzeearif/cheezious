@@ -20,7 +20,7 @@ export default function Home( ) {
   <Slider/>
       <FoodNav />
         <FinestTaste/>
-        <Footer />
+
     </main>
 
   )
